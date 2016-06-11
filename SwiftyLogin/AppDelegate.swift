@@ -12,11 +12,23 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var storyboard : UIStoryboard?;
+
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        
+        self.storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle());
+        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
+        if(!isUserLoggedIn){
+            self.window?.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Login");
+        } else {
+             self.window?.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Welcome");
+        }
+      
+        
+        return true;
     }
 
     func applicationWillResignActive(application: UIApplication) {
