@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if(!isUserLoggedIn){
             self.window?.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Login");
         } else {
-             self.window?.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Welcome");
+             self.window?.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Welcome2");
         }
       
         

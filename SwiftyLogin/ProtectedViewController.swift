@@ -8,6 +8,8 @@
 
 import UIKit
 import PageMenu
+import UIColor_Hex_Swift
+
 
 
 class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProtocol {
@@ -17,6 +19,10 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
     //    let animals : [String] = ["Dogs","Cats","Mice"]
     var pageMenu : CAPSPageMenu?
     var controllerArray : [UIViewController] = []
+    var primaryColor:UIColor = UIColor.blackColor()
+    
+    var secondaryColor:UIColor = UIColor.blackColor()
+    
     
     var locations: [Locations] = [
         Locations(title:"Lane1", teams: [
@@ -95,6 +101,8 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
         print("viewcontroller viewDidLoad")
         // Do any additional setup after loading the view, typically from a nib.
         self.customNavBarLayout()
+        primaryColor = UIColor(rgba: "#5AB2B1")
+        secondaryColor = primaryColor.colorWithAlphaComponent(0.4)
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
         // Example:
         for location in locations {
@@ -110,14 +118,13 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
         let parameters: [CAPSPageMenuOption] = [
             .ScrollMenuBackgroundColor(UIColor.whiteColor()),
             .ViewBackgroundColor(UIColor.whiteColor()),
-            .SelectionIndicatorColor(UIColor.blueColor()),
-            .UnselectedMenuItemLabelColor(UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 255.0/255.0, alpha: 0.4)),
-            //            .MenuItemFont(UIFont(name: "HelveticaNeue", size: 35.0)!),
+            .SelectionIndicatorColor(primaryColor),
+            .UnselectedMenuItemLabelColor(secondaryColor),
             .MenuHeight(44.0),
             .SelectionIndicatorHeight(0.0),
-            .BottomMenuHairlineColor(UIColor.blueColor()),
+            .BottomMenuHairlineColor(primaryColor),
             .MenuItemWidthBasedOnTitleTextWidth(true),
-            .SelectedMenuItemLabelColor(UIColor.blueColor())        ]
+            .SelectedMenuItemLabelColor(primaryColor)        ]
         
         // Initialize scroll menu
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 20.0, self.view.frame.width, self.view.frame.height - 20.0), pageMenuOptions: parameters)
@@ -150,6 +157,7 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
     
     func addRightBarButtons() {
         let logout = UIBarButtonItem(title: "Logout", style: .Plain, target: self, action: #selector(ViewController.logoutTapped))
+        logout.tintColor = UIColor(rgba: "#5AB2B1")
         navigationItem.rightBarButtonItems = [logout]
     }
     
@@ -183,3 +191,5 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
     
     
 }
+
+

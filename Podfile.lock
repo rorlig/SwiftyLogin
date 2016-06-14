@@ -8,6 +8,7 @@ PODS:
     - Realm/Headers (= 0.98.6)
   - Realm/Headers (0.98.6)
   - SwiftyJSON (2.3.2)
+  - UIColor_Hex_Swift (2.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - PageMenu
   - Realm
   - SwiftyJSON
+  - UIColor_Hex_Swift
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
@@ -23,7 +25,8 @@ SPEC CHECKSUMS:
   PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
   Realm: 44803f35418c5d89b27825a564247fcd190de37e
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  UIColor_Hex_Swift: e91dc51f6bf252ec7bf74c8704ceedeeb7640c1c
 
-PODFILE CHECKSUM: 925356fdca6f2351ec439729dcebb20383685b67
+PODFILE CHECKSUM: 6196f93f954151625580de46005e7d9e57e5aac7
 
 COCOAPODS: 1.0.0.beta.6

@@ -9,6 +9,8 @@ target 'SwiftyLogin' do
   pod 'Realm'
   pod 'JSONWebToken'
   pod 'PageMenu'
+  pod 'UIColor_Hex_Swift'
+
 
 end
 
