@@ -1,6 +1,6 @@
 //
-//  ProtectedViewController.swift
-//  SwiftyLogin
+//  ViewController.swift
+//  TryCalendarView
 //
 //  Created by Gaurav Gupta on 6/6/16.
 //  Copyright © 2016 Gaurav Gupta. All rights reserved.
@@ -9,15 +9,14 @@
 import UIKit
 import PageMenu
 
-
-class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProtocol {
+class ViewController: UIViewController, CAPSPageMenuDelegate, AuthProtocol {
     
-    //    let cellIdentifier = "Cell"
-    //    var tableView: UITableView  =   UITableView()
-    //    let animals : [String] = ["Dogs","Cats","Mice"]
+//    let cellIdentifier = "Cell"
+//    var tableView: UITableView  =   UITableView()
+//    let animals : [String] = ["Dogs","Cats","Mice"]
     var pageMenu : CAPSPageMenu?
     var controllerArray : [UIViewController] = []
-    
+
     var locations: [Locations] = [
         Locations(title:"Lane1", teams: [
             CustomCellData(dogName : "Bruno", handlerName: "Kyle", employer: "SOC", time: "08:00-10:00", status: "Not Completed"),
@@ -50,32 +49,32 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
         
         
     ]
-    
-    //    var locations = [
-    //        Locations(title:"Lane1", teams: [
-    //             Teams(handler: "Joe_L1", canine: "Rex", employer: "SOC"),
-    //             Teams(handler: "Bruce_L1", canine: "Can1", employer: "SOC"),
-    //             Teams(handler: "Joe_L1", canine: "Can1", employer: "SOC"),
-    //            ]),
-    //        Locations(title:"Lane2", teams: [
-    //            Teams(handler: "Joe_L2", canine: "Rex", employer: "SOC"),
-    //            Teams(handler: "Bruce_L2", canine: "Can1", employer: "SOC"),
-    //            Teams(handler: "Joe_L2", canine: "Can1", employer: "SOC"),
-    //            ]),
-    //        Locations(title:"Lane3", teams: [
-    //            Teams(handler: "Joe_L3", canine: "Rex", employer: "SOC"),
-    //            Teams(handler: "Bruce_L3", canine: "Can1", employer: "SOC"),
-    //            Teams(handler: "Joe_L3", canine: "Can1", employer: "SOC"),
-    //            ]),
-    //        Locations(title:"Lane4", teams: [
-    //            Teams(handler: "Joe_L4", canine: "Rex", employer: "SOC"),
-    //            Teams(handler: "Bruce_L4", canine: "Can1", employer: "SOC"),
-    //            Teams(handler: "Joe_L4", canine: "Can1", employer: "SOC"),
-    //            ])
-    //
-    //
-    //    ]
-    
+
+//    var locations = [
+//        Locations(title:"Lane1", teams: [
+//             Teams(handler: "Joe_L1", canine: "Rex", employer: "SOC"),
+//             Teams(handler: "Bruce_L1", canine: "Can1", employer: "SOC"),
+//             Teams(handler: "Joe_L1", canine: "Can1", employer: "SOC"),
+//            ]),
+//        Locations(title:"Lane2", teams: [
+//            Teams(handler: "Joe_L2", canine: "Rex", employer: "SOC"),
+//            Teams(handler: "Bruce_L2", canine: "Can1", employer: "SOC"),
+//            Teams(handler: "Joe_L2", canine: "Can1", employer: "SOC"),
+//            ]),
+//        Locations(title:"Lane3", teams: [
+//            Teams(handler: "Joe_L3", canine: "Rex", employer: "SOC"),
+//            Teams(handler: "Bruce_L3", canine: "Can1", employer: "SOC"),
+//            Teams(handler: "Joe_L3", canine: "Can1", employer: "SOC"),
+//            ]),
+//        Locations(title:"Lane4", teams: [
+//            Teams(handler: "Joe_L4", canine: "Rex", employer: "SOC"),
+//            Teams(handler: "Bruce_L4", canine: "Can1", employer: "SOC"),
+//            Teams(handler: "Joe_L4", canine: "Can1", employer: "SOC"),
+//            ])
+//
+//
+//    ]
+
     //Mark - logout controls
     
     func success() {
@@ -88,8 +87,8 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
     func error() {
         
     }
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewcontroller viewDidLoad")
@@ -105,14 +104,14 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
         }
         
         
-        
+
         
         let parameters: [CAPSPageMenuOption] = [
             .ScrollMenuBackgroundColor(UIColor.whiteColor()),
             .ViewBackgroundColor(UIColor.whiteColor()),
             .SelectionIndicatorColor(UIColor.blueColor()),
             .UnselectedMenuItemLabelColor(UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 255.0/255.0, alpha: 0.4)),
-            //            .MenuItemFont(UIFont(name: "HelveticaNeue", size: 35.0)!),
+//            .MenuItemFont(UIFont(name: "HelveticaNeue", size: 35.0)!),
             .MenuHeight(44.0),
             .SelectionIndicatorHeight(0.0),
             .BottomMenuHairlineColor(UIColor.blueColor()),
@@ -124,12 +123,12 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
         self.view.addSubview(pageMenu!.view)
         
         pageMenu!.delegate = self
+
+
         
-        
-        
-        
+
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -140,7 +139,7 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
         print("customNav")
         self.navigationController?.navigationBar.translucent = false
         self.navigationController?.navigationBar.topItem?.title = "Welcome Gaurav"
-        //        self.navigationController?.navigationBar.tintColor = UIColor.lightGrayColor()
+//        self.navigationController?.navigationBar.tintColor = UIColor.lightGrayColor()
         self.addRightBarButtons()
         self.addLeftBarButtons()
         self.addBottomView()
@@ -166,20 +165,21 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
     }
     
     func willMoveToPage(controller: UIViewController, index: Int){
-        //        print("willMoveToPage \(index)")
+//        print("willMoveToPage \(index)")
         let masterController = controller as! MasterViewController
         masterController.willShowTableOnMaster()
-        
+    
     }
     
     func didMoveToPage(controller: UIViewController, index: Int){
         print("didMoveToPage \(index)")
-        
+
     }
+
+ 
     
     
-    
-    
-    
-    
+
+
 }
+

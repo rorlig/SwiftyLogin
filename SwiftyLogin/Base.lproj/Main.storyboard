@@ -40,7 +40,7 @@
                                         </state>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="ARu-D3-XNG" eventType="touchUpInside" id="ebc-Pv-xy9"/>
-                                            <segue destination="XKx-sU-wk4" kind="show" identifier="segueToWelcome" id="x3s-pN-qws"/>
+                                            <segue destination="ydi-Es-bA0" kind="show" identifier="segueToWelcome" id="x3s-pN-qws"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -111,8 +111,27 @@
                             <constraint firstItem="hhM-nn-A8W" firstAttribute="centerX" secondItem="rq4-RD-ETa" secondAttribute="centerX" id="s4r-MD-bft"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="w6y-nm-6iF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ej-HN-q2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="234"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hsv-W3-Odx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ydi-Es-bA0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xV9-gO-9Qp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XKx-sU-wk4" kind="relationship" relationship="rootViewController" id="5y9-9V-AIQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDY-p3-FEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1216" y="234"/>
         </scene>

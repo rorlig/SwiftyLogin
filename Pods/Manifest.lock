@@ -3,6 +3,7 @@ PODS:
   - CryptoSwift (0.2.2)
   - JSONWebToken (1.4.3):
     - CryptoSwift (= 0.2.2)
+  - PageMenu (1.2.9)
   - Realm (0.98.6):
     - Realm/Headers (= 0.98.6)
   - Realm/Headers (0.98.6)
@@ -11,6 +12,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - JSONWebToken
+  - PageMenu
   - Realm
   - SwiftyJSON
 
@@ -18,9 +20,10 @@ SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   CryptoSwift: d382228d6301c09474132417878a741c2a2e68cd
   JSONWebToken: acdab3aeedf8d44f5cf09ad469deb42c4faf3740
+  PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
   Realm: 44803f35418c5d89b27825a564247fcd190de37e
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 16729f61dcd1a5361f4f6343a36f88c51ced7175
+PODFILE CHECKSUM: 925356fdca6f2351ec439729dcebb20383685b67
 
 COCOAPODS: 1.0.0.beta.6

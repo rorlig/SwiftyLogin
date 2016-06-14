@@ -20,6 +20,18 @@
 		9D63C0441D04CD4F00562AD5 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63C0431D04CD4F00562AD5 /* LoginService.swift */; };
 		9D63C0461D0505BB00562AD5 /* AuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63C0451D0505BB00562AD5 /* AuthProtocol.swift */; };
 		9D63C0491D05907600562AD5 /* ProtectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63C0481D05907600562AD5 /* ProtectedViewController.swift */; };
+		9DD174031D1046EA00E9F7B6 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD173F71D1046EA00E9F7B6 /* MasterViewController.xib */; };
+		9DD174041D1046EA00E9F7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD173F81D1046EA00E9F7B6 /* Assets.xcassets */; };
+		9DD174051D1046EA00E9F7B6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD173F91D1046EA00E9F7B6 /* File.swift */; };
+		9DD174061D1046EA00E9F7B6 /* TableViewDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD173FA1D1046EA00E9F7B6 /* TableViewDataProtocol.swift */; };
+		9DD174071D1046EA00E9F7B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD173FB1D1046EA00E9F7B6 /* ViewController.swift */; };
+		9DD174081D1046EA00E9F7B6 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD173FC1D1046EA00E9F7B6 /* CustomCell.xib */; };
+		9DD174091D1046EA00E9F7B6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD173FD1D1046EA00E9F7B6 /* MasterViewController.swift */; };
+		9DD1740A1D1046EA00E9F7B6 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD173FE1D1046EA00E9F7B6 /* Locations.swift */; };
+		9DD1740B1D1046EA00E9F7B6 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD173FF1D1046EA00E9F7B6 /* CustomCell.swift */; };
+		9DD1740C1D1046EA00E9F7B6 /* CustomCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD174001D1046EA00E9F7B6 /* CustomCellData.swift */; };
+		9DD1740D1D1046EA00E9F7B6 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD174011D1046EA00E9F7B6 /* Teams.swift */; };
+		9DD1740E1D1046EA00E9F7B6 /* TabHeaderCollectionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD174021D1046EA00E9F7B6 /* TabHeaderCollectionViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +75,18 @@
 		9D63C0431D04CD4F00562AD5 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		9D63C0451D0505BB00562AD5 /* AuthProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProtocol.swift; sourceTree = "<group>"; };
 		9D63C0481D05907600562AD5 /* ProtectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedViewController.swift; sourceTree = "<group>"; };
+		9DD173F71D1046EA00E9F7B6 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		9DD173F81D1046EA00E9F7B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DD173F91D1046EA00E9F7B6 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		9DD173FA1D1046EA00E9F7B6 /* TableViewDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataProtocol.swift; sourceTree = "<group>"; };
+		9DD173FB1D1046EA00E9F7B6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DD173FC1D1046EA00E9F7B6 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		9DD173FD1D1046EA00E9F7B6 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		9DD173FE1D1046EA00E9F7B6 /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		9DD173FF1D1046EA00E9F7B6 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		9DD174001D1046EA00E9F7B6 /* CustomCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellData.swift; sourceTree = "<group>"; };
+		9DD174011D1046EA00E9F7B6 /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		9DD174021D1046EA00E9F7B6 /* TabHeaderCollectionViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabHeaderCollectionViewProtocol.swift; sourceTree = "<group>"; };
 		A8019C89644534210BFCDC15 /* Pods-SwiftyLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyLoginTests/Pods-SwiftyLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2309A0AA67FED8FCE59357E /* Pods_SwiftyLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +157,18 @@
 		9D2059AF1D04B27400D03BEF /* SwiftyLogin */ = {
 			isa = PBXGroup;
 			children = (
+				9DD173F71D1046EA00E9F7B6 /* MasterViewController.xib */,
+				9DD173F81D1046EA00E9F7B6 /* Assets.xcassets */,
+				9DD173F91D1046EA00E9F7B6 /* File.swift */,
+				9DD173FA1D1046EA00E9F7B6 /* TableViewDataProtocol.swift */,
+				9DD173FB1D1046EA00E9F7B6 /* ViewController.swift */,
+				9DD173FC1D1046EA00E9F7B6 /* CustomCell.xib */,
+				9DD173FD1D1046EA00E9F7B6 /* MasterViewController.swift */,
+				9DD173FE1D1046EA00E9F7B6 /* Locations.swift */,
+				9DD173FF1D1046EA00E9F7B6 /* CustomCell.swift */,
+				9DD174001D1046EA00E9F7B6 /* CustomCellData.swift */,
+				9DD174011D1046EA00E9F7B6 /* Teams.swift */,
+				9DD174021D1046EA00E9F7B6 /* TabHeaderCollectionViewProtocol.swift */,
 				9D2059B01D04B27400D03BEF /* AppDelegate.swift */,
 				9D2059B21D04B27400D03BEF /* LoginViewController.swift */,
 				9D2059B41D04B27400D03BEF /* Main.storyboard */,
@@ -286,9 +322,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DD174081D1046EA00E9F7B6 /* CustomCell.xib in Resources */,
+				9DD174031D1046EA00E9F7B6 /* MasterViewController.xib in Resources */,
 				9D2059BB1D04B27400D03BEF /* LaunchScreen.storyboard in Resources */,
 				9D2059B81D04B27400D03BEF /* Assets.xcassets in Resources */,
 				9D2059B61D04B27400D03BEF /* Main.storyboard in Resources */,
+				9DD174041D1046EA00E9F7B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,9 +476,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D2059B31D04B27400D03BEF /* LoginViewController.swift in Sources */,
+				9DD174051D1046EA00E9F7B6 /* File.swift in Sources */,
+				9DD1740B1D1046EA00E9F7B6 /* CustomCell.swift in Sources */,
 				9D63C0461D0505BB00562AD5 /* AuthProtocol.swift in Sources */,
+				9DD1740C1D1046EA00E9F7B6 /* CustomCellData.swift in Sources */,
 				9D63C0441D04CD4F00562AD5 /* LoginService.swift in Sources */,
+				9DD174061D1046EA00E9F7B6 /* TableViewDataProtocol.swift in Sources */,
+				9DD1740D1D1046EA00E9F7B6 /* Teams.swift in Sources */,
+				9DD174091D1046EA00E9F7B6 /* MasterViewController.swift in Sources */,
+				9DD1740E1D1046EA00E9F7B6 /* TabHeaderCollectionViewProtocol.swift in Sources */,
 				9D63C0491D05907600562AD5 /* ProtectedViewController.swift in Sources */,
+				9DD174071D1046EA00E9F7B6 /* ViewController.swift in Sources */,
+				9DD1740A1D1046EA00E9F7B6 /* Locations.swift in Sources */,
 				9D2059B11D04B27400D03BEF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

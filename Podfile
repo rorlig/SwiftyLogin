@@ -8,6 +8,8 @@ target 'SwiftyLogin' do
   pod 'SwiftyJSON'
   pod 'Realm'
   pod 'JSONWebToken'
+  pod 'PageMenu'
+
 end
 
 target 'SwiftyLoginTests' do
