@@ -147,12 +147,9 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
         print("customNav")
         self.navigationController?.navigationBar.translucent = false
         self.navigationController?.navigationBar.topItem?.title = "Welcome Gaurav"
-        //        self.navigationController?.navigationBar.tintColor = UIColor.lightGrayColor()
         self.addRightBarButtons()
         self.addLeftBarButtons()
         self.addBottomView()
-        
-        
     }
     
     func addRightBarButtons() {
@@ -162,7 +159,12 @@ class ProtectedViewController: UIViewController, CAPSPageMenuDelegate, AuthProto
     }
     
     func addLeftBarButtons() {
-        //TODO
+        let dayTimePeriodFormatter = NSDateFormatter()
+        dayTimePeriodFormatter.dateFormat = "EEE, MMM dd, YYYY"
+        let currentTime = dayTimePeriodFormatter.stringFromDate(NSDate())
+        let timeLabel = UIBarButtonItem(title: currentTime, style: .Plain, target: self, action: nil)
+        timeLabel.tintColor = UIColor(rgba: "#5AB2B1")
+        navigationItem.leftBarButtonItems = [timeLabel]
     }
     
     func addBottomView() {

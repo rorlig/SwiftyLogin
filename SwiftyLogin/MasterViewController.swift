@@ -63,7 +63,7 @@ class MasterViewController: UIViewController, UITableViewDelegate,UITableViewDat
     func addBottomView() {
         let screenSize = UIScreen.mainScreen().bounds
         let screenHeight = screenSize.height
-        let screenWidth = screenSize.width/2
+        let screenWidth = screenSize.width*2/5
         
         tableView = UITableView(frame: (CGRectMake(0, 0, screenWidth, screenHeight)), style: UITableViewStyle.Plain)
 //        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
